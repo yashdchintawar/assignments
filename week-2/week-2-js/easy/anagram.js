@@ -5,7 +5,9 @@
 */
 
 function isAnagram(str1, str2) {
-
+  console.log(str1, str2);
 }
+
+isAnagram("yash", "ashy");
 
 module.exports = isAnagram;
