@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BG COlOR DOM-Easy-2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        #color-picker-container{
+            background-color: gray;
+        }
+    </style>
+
+    <script>
+      let color = "#ffffff";
+
+      function changeColor(colorCode) {
+        color = colorCode;
+        render();
+      }
+
+      function render() {
+        document.querySelector("body").style.backgroundColor = color;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="color-picker-container">
+      <div id="static-colors">
+        <button id="btn-red" onclick="changeColor('#FF0000')">Red</button>
+        <button id="btn-orange" onclick="changeColor('#FFA500')">Orange</button>
+        <button id="btn-yellow" onclick="changeColor('#FFFF00')">Yellow</button>
+        <button id="btn-green" onclick="changeColor('#008000')">Green</button>
+        <button id="btn-blue" onclick="changeColor('#0000FF')">Blue</button>
+        <button id="btn-indogo" onclick="changeColor('#4B0082')">Indigo</button>
+        <button id="btn-voilet" onclick="changeColor('#8F00FF')">Violet</button>
+      </div>
+      <input type="color" onchange="changeColor(this.value)" />
+    </div>
+  </body>
+</html>
