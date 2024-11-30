@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div id="form-builder">
+    <h1>Form Builder</h1>
+    <label for="form-builder-dropdown">Select Field Type:</label>
+    <select id="form-builder-dropdown" name="form-builder-dropdown">
+      <option value="input-field">Input Field</option>
+      <option value="date-picker">Date Picker</option>
+      <option value="color-picker">Color Picker</option>
+    </select>
+
+    <label for="field-name">Field Name:</label>
+    <input type="text" id="field-name" name="field-name" placeholder="Enter field name" />
+
+    <button type="button" onclick="updateFormField()">Add Field</button>
+  </div>
+
+
+  <div id="form-builder">
+    <h1>Updated Form</h1>
+
+    <div id="dynamic-form">
+      
+    </div>
+  </div>
+</body>
+
+</html>

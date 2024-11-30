@@ -1,0 +1,19 @@
+    #form-builder {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    #form-builder h1 {
+      text-align: center;
+    }
+    #form-builder label, #form-builder select, #form-builder input, #form-builder button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    #dynamic-form {
+      margin-top: 30px;
+    }
