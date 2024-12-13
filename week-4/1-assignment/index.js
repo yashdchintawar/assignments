@@ -8,7 +8,7 @@ program
   .version("0.8.0");
 
 program
-  .command("count_sentences")
+  .command("count_words")
   .description("Count the number of lines in a file")
   .argument("<file>", "file to count")
   .action((file) => {
@@ -16,8 +16,8 @@ program
       if (err) {
         console.log(err);
       } else {
-        const lines = data.split(" ").length;
-        console.log(`There are ${lines} lines in ${file}`);
+        const words = data.split(" ").length;
+        console.log(`There are ${words} words in file : ${file}`);
       }
     });
   });

@@ -1,0 +1,15 @@
+[
+    {
+      "task": "Learn Node.js",
+      "done": false
+    },
+    {
+      "task": "Build a CLI tool",
+      "done": true
+    },
+    {
+      "task": "Write documentation",
+      "done": false
+    }
+  ]
+  
