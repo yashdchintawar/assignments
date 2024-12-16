@@ -1,0 +1,15 @@
+todo app
+
+
+in this appp we require to manage in 4 ways
+
+
+
+1. add
+2. edit
+3. delete
+4. list
+
+
+
+first will do the listing.
